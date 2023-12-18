@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style.css" rel="stylesheet">
     <link href="./css/neonButton.css" rel="stylesheet">
-    <link href="./bootstrap-5.0.2-dist/css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="./css/carroselMarcas.css" rel="stylesheet">
+    <link rel="icon" href="./src/aplicativo-movel.png" type="image">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>PcrCell - Assistência Técnica</title>
 </head>
 
 <body>
+    <img src="./src/whatsapp.png" class="wppButton" id="whatsapp">
+
     <header>
         <nav>
             <div class="divLogo">
@@ -24,7 +27,7 @@
                 <a href="#Acessorios">Acessórios</a>
                 <a href="#contato">Onde estamos</a>
             </div>
-            <button class="neon-button">Entrar em contato</button>
+            <button class="neon-button" id="whatsapp3">Entrar em contato</button>
         </nav>
     </header>
 
@@ -37,10 +40,13 @@
             o que nos define.</p>
         <div class="inicioIMG">
             <img src="./src/mobile.png">
+            <img src="./src/mobile2.png">
         </div>
     </section>
 
-    <section class="servicos" id="servicos">
+    <hr>
+
+    <section class="servicos" id="servicos" style="margin: 20px 0px;">
         <h1>Conheça os nossos serviços!</h1>
 
         <div class="services">
@@ -94,7 +100,9 @@
 
     </section>
 
-    <section class="marcas">
+    <hr>
+
+    <section class="marcas" style="margin: 20px 0px;">
         <h1>Consertamos os mais diversos modelos e marcas!</h1>
         <article class="wrapper">
             <div class="marquee">
@@ -230,7 +238,9 @@
         </svg>
     </section>
 
-    <section class="produtos" id="Acessorios">
+    <hr>
+
+    <section class="produtos" id="Acessorios" style="margin: 20px 0px;">
         <h1>Nossos produtos!</h1>
         <div class="prateleira">
             <div class="produto">
@@ -295,7 +305,36 @@
 
     </section>
 
-    <section class="contato" id="contato">
+    <hr>
+
+    <section class="depoimentos" style="margin: 20px 0px;">
+        <h1>Eles confiaram na PCRCELL e estão satisfeitos!</h1>
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./src/depoimentos/depoimento1.png"></div>
+                <div class="swiper-slide"><img src="./src/depoimentos/depoimento2.png"></div>
+                <div class="swiper-slide"><img src="./src/depoimentos/depoimento3.png"></div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+    </section>
+
+    <hr>
+
+    <section class="contato" id="contato" style="margin: 20px 0px;">
         <h1>Onde estamos</h1>
 
         <div class="maps">
@@ -310,7 +349,7 @@
             <img src="./src/loja.png">
         </div>
 
-        <h1>Entre em contato e solicite seu orçamento!</h1>
+        <h1 style="margin-top: 20px;">Entre em contato e solicite seu orçamento!</h1>
         <div class="formulario">
             <div class="login-box">
                 <form>
@@ -331,10 +370,28 @@
     </section>
 
     <footer>
-        <p style="color: #ffff;">© 2023 - luccabrasi.es@gmail.com</p>
+
+        <div class="rodape">
+            <h5 style="margin-left: 6px;">Sobre</h5>
+            <p>
+                A PCRCELL é uma empresa particular e independente, NÃO somos Autorizados e nem representamos nenhuma
+                marca
+                ou fabricante. Somos uma assistência Multi Marca e não atendemos garantia do fabricante nem garantia
+                estendida.</p>
+        </div>
+
+        <div>
+            <h5 style="margin-left: 6px;">Contato</h5>
+            <p>📍Av. César Lattes, Qd.65A Lt.32 - Vila Novo Horizonte, Goiânia GO, 74363-400</p>
+            <p>📞 (62) 986346334</p>
+        </div>
+
+
+        <p style="color: #ffff; margin-bottom: 10px;"><b>Desenvolvido por Brasi Tecnologia</b></p>
     </footer>
 
-    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
