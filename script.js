@@ -69,3 +69,24 @@ function autoExpand(textarea) {
     textarea.style.height = 'auto';
     textarea.style.height = (textarea.scrollHeight) + 'px';
 }
+
+/*----------------------------*/
+const links = document.querySelectorAll('.menu a');
+
+links.forEach(nav => {
+
+    nav.addEventListener('click', () => {
+        changeActive(nav)
+    })
+})
+
+function changeActive(element) {
+    // Remove a classe 'active' de todos os links
+    console.log(element);
+    links.forEach(function (link) {
+        link.classList.remove('selecionado');
+    });
+
+    // Adiciona a classe 'active' ao link clicado
+    element.classList.add('selecionado');
+}

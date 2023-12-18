@@ -1,7 +1,7 @@
 :root {
     --color-text: navy;
-    --color-bg: lightgray;
-    --color-bg-accent: lightgray;
+    --color-bg: #ffff;
+    --color-bg-accent: #ffff;
     --size: clamp(10rem, 1rem + 40vmin, 30rem);
     --gap: calc(var(--size) / 14);
     --duration: 30s;
