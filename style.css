@@ -225,6 +225,22 @@ h1 {
 
 /*-------------*/
 
+.loc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.loc img {
+    width: 50px;
+}
+
+.loc h1 {
+    margin-bottom: -20px;
+    margin-left: 10px;
+}
+
 .maps {
     width: 100%;
     border-radius: 8px;
