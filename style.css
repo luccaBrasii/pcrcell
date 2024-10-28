@@ -415,3 +415,40 @@ footer a {
     cursor: pointer;
     margin: 15px;
 }
+
+@media only screen and (min-width: 768px) {
+    .inicio{
+        justify-content: center;
+        align-items: center;
+    }
+    .inicio p{
+        text-align: center;
+        width: 50%;
+    }
+
+    .inicio img {
+        width: 100px;
+        margin: 40px 20px;
+    }
+
+    .servicesPc, .produtosPC{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .delivery {
+        width: auto;
+    }
+    .contato{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer{
+        text-align: center;
+    }
+}
